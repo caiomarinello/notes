@@ -1,0 +1,42 @@
+    /* styles.css */
+
+    /* Light Mode Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C0A886;
+    color: #333; /* Text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #E2DBC8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #172136;
+    color: white;
+    /* Other styles */
+}
+
+body.dark-mode .container {
+    background-color: #313E59;
+}
+
+/* Light Mode Overrides for Headings */
+body:not(.dark-mode) h1,
+body:not(.dark-mode) h2,
+body:not(.dark-mode) h3 {
+    color: black; /* Heading color in light mode */
+}
+
+/* Dark Mode Overrides for Headings */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: white; /* Heading color in dark mode */
+}

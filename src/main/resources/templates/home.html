@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <button id="toggle-button">Toggle Dark Mode</button>
+
+    <div class="container">
+        <h1>Welcome to Custom Page</h1>
+        <p>This is a simple example page with some styles applied.</p>
+        <p th:text="${message}"></p>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
