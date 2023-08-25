@@ -1,6 +1,6 @@
 package com.notes.personalproject.model;
 
-import java.sql.Time;
+import java.time.LocalTime;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,7 +15,7 @@ public @Data class Alarm {
     private Long id;
     
     private String title;
-    private Time time;
+    private LocalTime  time;
     private boolean enabled;
     private String message;
 }

@@ -6,11 +6,22 @@
 <body>
     <button id="toggle-button">Toggle Dark Mode</button>
 
-    <div class="container">
-        <h1>Welcome to Custom Page</h1>
-        <p>This is a simple example page with some styles applied.</p>
-        <p th:text="${message}"></p>
-    </div>
+    <h1>Create Alarm</h1>
+    <form id="alarm-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+    
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required><br><br>
+    
+        <label for="enabled">Enabled:</label>
+        <input type="checkbox" id="enabled" name="enabled"><br><br>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+    
+        <input type="submit" value="Create Alarm" id="create-alarm-button">
+    </form>    
 
     <script src="/js/script.js"></script>
 </body>
